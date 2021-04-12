@@ -1,0 +1,36 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: background-color 1s;
+  }
+  
+  .rect {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #green {
+    background-color: #559065;
+  }
+  
+  #blue {
+    background-color: #7eb3a7;
+  }
+
+#tagline  {
+  text-align: right;
+}
+
+#pipe {
+  width: 100%;
+  height: 270px;
+  margin-bottom: 0px;
+  background-color: #559065;
+  object-position: 40px;
+  position: relative;
+  top: -219px; 
+}
+
+body {
+  background-color:#559065;
+}
