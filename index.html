@@ -22,7 +22,7 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <div class="row">
-            <div class="col" id="tagline">
+            <div class="col mx-auto" id="tagline">
             <h1>C.R.A.P Master</h1>
             <h2>Certified Repair and Plumbing</h2>
             </div>
@@ -60,18 +60,7 @@
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function() {
-    $(window).scroll(function() {
-      if($(this).scrollTop() < $("#green").height()){
-         $(".navbar").removeClass("bg-dark");
-      }
-      else{
-         $(".navbar").addClass("bg-dark");
-      }
-    });
-  });
-    </script>
+      
     </header>
     <div class="rect" id="green"></div>
     <div class="rect" id="blue"></div> 
@@ -91,6 +80,18 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() < $("#green").height()){
+       $(".navbar").removeClass("bg-dark");
+    }
+    else{
+       $(".navbar").addClass("bg-dark");
+    }
+  });
+});
+  </script>
 </body>
 
 </html>
