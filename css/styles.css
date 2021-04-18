@@ -9,12 +9,12 @@
     height: 100vh;
   }
   
-  #green {
-    background-color: #559065;
+  .brown {
+    background-color: #79421bd3;
   }
   
-  #blue {
-    background-color: #7eb3a7;
+  .grey {
+    background-color: #6d6d6d;
   }
 
 #tagline  {
@@ -32,9 +32,16 @@
 }
 
 body {
-  background-color:#559065;
+  background-color:#79421b;
 }
 .active{
   background-color: rgb(131, 38, 38);
+  max-width: 5rem;
+  text-align: center;
   border-radius: 40px;
+}
+
+#videoWrapper {
+  align-items: center;
+  max-width: 34rem;
 }

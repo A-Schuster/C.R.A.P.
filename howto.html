@@ -11,46 +11,66 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="script" href="java/functions.js" />
-    <script src="/java/NavBar.js"></script>
+    <script src="/java/header.js"></script>
     <title>C.R.A.P</title>
 
 </head>
 
+<script>{header("howto")}</script>
 
 <body>
-
-    <header>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col mx-auto" id="tagline">
-            <h1>C.R.A.P</h1>
-            <h2>Certified Repair and Plumbing</h2>
-            </div>
-          </div>
+  <div class="rect brown">
+    <h1 style="width: 100%; text-align: center;">HOW TO VIDEOS*</h1>
+    <div class="card-group d-flex flex-column flex-md-row">
+      <div class="card mx-auto m-sm-2 w-100 w-sm-50">
+        <iframe class="card-img-top" width="400" height="300" src="https://www.youtube.com/embed/SYPFon69vKs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">How To Fix a Leaky Faucet</h5>
         </div>
       </div>
-        <script>{navBar()}{addActive("howto")}</script>
-      <div container>
-        <div row>
-          <div col>
-            <img class="d-none d-md-block" src="pictures/pipe5.png" id="pipe" />
-          </div>
+      <div class="card mx-auto m-sm-2 w-100 w-sm-50">
+        <iframe class="card-img-top" width="400" height="300" src="https://www.youtube.com/embed/ReHeYdwlwqE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">How to Un-make a Hole</h5>
         </div>
       </div>
-      
-    </header>
-    <div class="rect" id="green"></div>
-    <div class="rect" id="blue"></div> 
-    <footer>
-        <div>
+      <div class="card mx-auto m-sm-2 w-100 w-sm-50">
+        <iframe class="card-img-top" width="400" height="300" src="https://www.youtube.com/embed/E6PZVEz_o-g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">How to Replace a Garbage Disposal</h5>
+        </div>
+      </div>
+    </div>
+    <div class="card-group d-flex flex-column flex-md-row">
+      <div class="card mx-auto m-sm-2 w-100 w-sm-50">
+        <iframe class="card-img-top" width="400" height="300" src="https://www.youtube.com/embed/pXUaM8KNQdk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">How to Fix a Dishwasher that Wont Drain</h5>
+        </div>
+      </div>
+      <div class="card mx-auto m-sm-2 w-100 w-sm-50">
+        <iframe class="card-img-top" width="400" height="300"  src="https://www.youtube.com/embed/1tKLo3Tkqsk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">How to Unclog a Toilet Without a Plunger</h5>
+        </div>
+      </div>
+      <div class="card mx-auto m-sm-2 w-100 w-sm-50">
+        <iframe class="card-img-top" width="400" height="300" src="https://www.youtube.com/embed/q5gzSccK_Tk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-body">
+          <h5 class="card-title">How to Replace a Toilet Flange</h5>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex mx-auto flex-column">
+        <div class="mx-auto">
+          *Videos provided from Home Depot.
             <h5>Social</h5>
             <a href="http://instagram.com/">Instagram</a>
             <a href="http://facebook.com/">Facebook</a>
             <a href="http://twitter.com/">Twitter</a>
             <a href="http://youtube.com/">YouTube</a>
         </div>
-        <div>
+        <div class="mx-auto">
             Tel: 1-206-555-1234<br />
             Email: mastercrap@gmail.com
         </div>
@@ -61,7 +81,7 @@
     <script>
       $(document).ready(function() {
   $(window).scroll(function() {
-    if($(this).scrollTop() < $("#green").height()){
+    if($(this).scrollTop() < $("#pipe").height()){
        $(".navbar").removeClass("bg-dark");
     }
     else{

@@ -1,5 +1,27 @@
+const header = (page) => {
+document.write(`<header>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col mx-auto" id="tagline">
+      <h1>C.R.A.P</h1>
+      <h2>Certified Repair and Plumbing</h2>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>${navBar(page)}</script>
+<div container>
+  <div row>
+    <div col>
+      <img class="d-none d-md-block" src="pictures/pipe5.png" id="pipe" />
+    </div>
+  </div>
+</div>
+</header>`)
+}
 
-const navBar = () => {
+const navBar = (page) => {
   document.write(`<nav class="navbar navbar-expand-lg navbar-light sticky-top">
   <div class="container">
       <a class="navbar-brand" href="#">  <img src="pictures/Icon.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>
@@ -24,6 +46,7 @@ const navBar = () => {
       </div>
     </div>
   </nav>`)
+  addActive(page)
 }
 
 const addActive = (page) => {

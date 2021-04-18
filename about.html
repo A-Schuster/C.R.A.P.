@@ -11,37 +11,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="script" href="java/functions.js" />
-    <script src="/java/NavBar.js"></script>
+    <script src="/java/header.js"></script>
     <title>C.R.A.P</title>
 
 </head>
 
+<script>{header("about")}</script>
 
 <body>
-
-    <header>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col mx-auto" id="tagline">
-            <h1>C.R.A.P</h1>
-            <h2>Certified Repair and Plumbing</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-        <script>{navBar()}{addActive("about")}</script>
-      <div container>
-        <div row>
-          <div col>
-            <img class="d-none d-md-block" src="pictures/pipe5.png" id="pipe" />
-          </div>
-        </div>
-      </div>
-      
-    </header>
-    <div class="rect" id="green"></div>
-    <div class="rect" id="blue"></div> 
+  <div class="rect brown"></div>
+  <div class="rect grey"></div> 
     <footer>
         <div>
             <h5>Social</h5>
@@ -61,7 +40,7 @@
     <script>
       $(document).ready(function() {
   $(window).scroll(function() {
-    if($(this).scrollTop() < $("#green").height()){
+    if($(this).scrollTop() < $("#pipe").height()){
        $(".navbar").removeClass("bg-dark");
     }
     else{
