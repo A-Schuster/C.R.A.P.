@@ -18,5 +18,5 @@ $(document).ready(function() {
    } else {
        $('.navbar').removeClass("navbar-hide");
    }
-
 });
+
