@@ -38,3 +38,32 @@ body {
   background-color: rgb(131, 38, 38);
   border-radius: 40px;
 }
+
+.team{
+  margin: 4em 0;
+  position: relative;  
+ }
+ .team h1{
+  color:#f3f1f0;
+  margin: 2em; 
+ }
+ .team .item{
+  position: relative;
+  
+ }
+ .team .des{
+  background: #753700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom-left-radius: 93%;
+  transition:.3s ease-in-out;  
+ }
+
+ .team .item:hover .des{
+  height: 100%;
+  background:#f973007d;
+  position: absolute;
+  width: 89%;
+  padding: 5em;
+  top: 0;
+  border-bottom-left-radius: 0;
